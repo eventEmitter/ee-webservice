@@ -7,11 +7,9 @@
 
 
 	var service = new Webservice( {
-		webserver: {
-			http: {
-				  interface: 	Webservice.Webserver.IF_ANY 
-				, port: 		12001
-			}
+		http: {
+			  interface: 	Webservice.Webserver.IF_ANY 
+			, port: 		12001
 		}
 	} );
 
