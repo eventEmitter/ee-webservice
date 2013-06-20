@@ -1,0 +1,26 @@
+{
+      "name":           "ee-webservice"
+    , "description":    "A framework for Webservices"
+    , "version":        "0.1.0"
+    , "homepage":       "https://github.com/eventEmitter/ee-webservice"
+    , "author":         "Michael van der Weg <michael@eventemitter.com> (http://eventemitter.com/)" 
+    , "repository": {
+        "url":          "https://github.com/eventEmitter/ee-webservice"
+    }
+    , "engines": {
+        "node":         "*"
+    }
+    , "bugs": {
+        "url":          "https://github.com/eventEmitter/ee-webservice/issues"
+    }
+    , "dependencies": {
+          "ee-class":       "*"
+        , "ee-event":       "*"
+        , "ee-log":         "*"
+        , "ee-argv":        "*"
+        , "ee-waiter":      "*"
+        , "ee-webserver":   "*"
+    }
+    , "devDependencies": {}
+    , "optionalDependencies": {}
+}
