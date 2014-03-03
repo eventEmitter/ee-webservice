@@ -14,12 +14,12 @@
         "url":          "https://github.com/eventEmitter/ee-webservice/issues"
     }
     , "dependencies": {
-          "ee-class":       "*"
-        , "ee-event":       "*"
-        , "ee-log":         "*"
-        , "ee-argv":        "*"
-        , "ee-waiter":      "*"
-        , "ee-webserver":   "*"
+          "ee-class":       "0.2.x"
+        , "ee-event":       "0.1.x"
+        , "ee-log":         "0.2.x"
+        , "ee-argv":        "0.1.x"
+        , "ee-waiter":      "0.1.x"
+        , "ee-webserver":   "0.2.1"
     }
     , "devDependencies": {}
     , "optionalDependencies": {}
