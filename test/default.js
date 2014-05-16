@@ -39,6 +39,19 @@
 			service.listen(done);
 		});
 
+		it('should be able to add a function as middleware', function(){
+			service.use(function(request, response, next){
+				response.send(600);
+			});
+		});
+
+		it('should be able a domain specific middleware', function(done){
+			service.use('www.127.0.0.1.xip.io', function(request, response, next){
+				response.send(201);
+			});
+			done();
+		});
+
 		it('should be able to handle a request', function(done){		
 			request.get('http://127.0.0.1:13023/fabian', function(err, res, body){
 				done(res.statusCode === 200 ? null : new Error('got invaild respons statuscode «'+res.statusCode+'»!'));
@@ -47,7 +60,13 @@
 
 		it('should be able to handle another request', function(done){		
 			request.get('http://127.0.0.1:13023/michael', function(err, res, body){
-				done(res.statusCode === 404 ? null : new Error('got invaild respons statuscode «'+res.statusCode+'»!'));
+				done(res.statusCode === 600 ? null : new Error('got invaild respons statuscode «'+res.statusCode+'»!'));
+			});
+		});
+
+		it('should be able to handle a request on a specific domain', function(done){		
+			request.get('http://www.127.0.0.1.xip.io:13023/fabian', function(err, res, body){
+				done(res.statusCode === 201 ? null : new Error('got invaild respons statuscode «'+res.statusCode+'»!'));
 			});
 		});
 
