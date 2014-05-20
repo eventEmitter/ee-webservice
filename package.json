@@ -1,7 +1,7 @@
 {
       "name"                        : "ee-webservice"
     , "description"                 : "webservice module supporting any «ee» middleware"
-    , "version"                     : "0.3.0"
+    , "version"                     : "0.3.1"
     , "homepage"                    : "https://github.com/eventEmitter/ee-webservice"
     , "author"                      : "Michael van der Weg <michael@eventemitter.com> (http://eventemitter.com/)" 
     , "licence"                     : "mit"

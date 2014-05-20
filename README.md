@@ -18,13 +18,14 @@ Webservice implementation with support for middleware
 	});
 
 
-### use
+### use method
 
 Every middleware will be called with exactly 3 parameters:
 
 - request: request object of the ee-webserver
 - response: response object of the the ee-webserver
 - next: callback to be called for executing the next middleware
+
 	
 	// use a simple middleware for all hostnames not matched by a specific rule
 	service.use(function(request, response, next){});
