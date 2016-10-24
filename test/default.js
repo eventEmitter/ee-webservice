@@ -1,8 +1,7 @@
 
 	var   Class 		= require('ee-class')
 		, log 			= require('ee-log')
-		, assert 		= require('assert')
-		, travis 		= require('ee-travis');
+		, assert 		= require('assert');
 
 
 
@@ -18,7 +17,7 @@
 
 	var config = {
 		  port: 13023
-		, interface: Webservice.IF_ANY
+		, interface: 5
 	};
 
 
