@@ -1,5 +1,7 @@
 # ee-webservice
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/eventEmitter/ee-webservice.svg)](https://greenkeeper.io/)
+
 Webservice implementation with support for middleware
 
 ## build status
